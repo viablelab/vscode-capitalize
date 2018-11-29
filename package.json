@@ -4,6 +4,8 @@
   "description": "Capitalize titles according to The Chicago Manual of Style",
   "version": "0.0.1",
   "license": "MIT",
+  "publisher": "viablelab",
+  "repository": "https://github.com/viablelab/vscode-capitalize",
   "engines": {
     "vscode": "^1.29.0"
   },
