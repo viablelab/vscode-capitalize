@@ -14,6 +14,6 @@ Select the text you want to capitalize and execute the `Capitalize Title` comman
 
 ## Configuration
 
-**`capitalize.special`**
+#### `capitalize.special`
 
 An array of strings that should be capitalized as specified. See corresponding option in the [title library](https://github.com/zeit/title#usage).
