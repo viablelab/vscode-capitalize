@@ -10,10 +10,10 @@ Search for `Capitalize` in the _Extensions_ section.
 
 ## Usage
 
-Select the text you want to capitalize and execute the `Capitalize title` command via the command palette.
+Select the text you want to capitalize and execute the `Capitalize Title` command via the command palette.
 
 ## Configuration
 
-#### `capitalize.special`
+**`capitalize.special`**
 
 An array of strings that should be capitalized as specified. See corresponding option in the [title library](https://github.com/zeit/title#usage).
