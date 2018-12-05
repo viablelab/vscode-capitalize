@@ -2,7 +2,7 @@
   "name": "capitalize",
   "displayName": "Capitalize",
   "description": "Capitalize titles according to The Chicago Manual of Style",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "MIT",
   "publisher": "viablelab",
   "repository": "https://github.com/viablelab/vscode-capitalize",
