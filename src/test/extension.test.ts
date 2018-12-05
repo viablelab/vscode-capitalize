@@ -11,7 +11,7 @@ test('capitalize', async () => {
   const editor = vscode.window.activeTextEditor as vscode.TextEditor;
   const document = editor.document;
 
-  assert.deepEqual([], config.special, 'exposes expected configuration');
+  assert(Array.isArray(config.special), 'exposes expected configuration');
 
   const firstLine = document.lineAt(0);
   editor.selection = new vscode.Selection(
