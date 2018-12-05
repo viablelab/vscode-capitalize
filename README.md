@@ -10,7 +10,7 @@ Search for `Capitalize` in the _Extensions_ section.
 
 ## Usage
 
-Select the text you want to capitalize and execute the `Capitalize title` command via the command palette.
+Select the text you want to capitalize and execute the `Capitalize Title` command via the command palette.
 
 ## Configuration
 
