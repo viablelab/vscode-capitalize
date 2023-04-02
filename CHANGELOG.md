@@ -4,7 +4,7 @@ All notable changes to the "capitalize" extension will be documented in this fil
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## 0.2.1 - 2023-04-02
+## [0.2.1] - 2023-04-02
 
 - Update dependency versions (including `title`)
 
