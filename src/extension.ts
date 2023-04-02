@@ -1,13 +1,13 @@
-'use strict';
+"use strict";
 
-import * as vscode from 'vscode';
-import title = require('title');
+import * as vscode from "vscode";
+import title = require("title");
 
 export function activate(context: vscode.ExtensionContext) {
-  const config = vscode.workspace.getConfiguration('capitalize');
+  const config = vscode.workspace.getConfiguration("capitalize");
 
   let disposable = vscode.commands.registerCommand(
-    'extension.capitalizeTitle',
+    "extension.capitalizeTitle",
     () => {
       const editor = vscode.window.activeTextEditor;
 
@@ -19,7 +19,7 @@ export function activate(context: vscode.ExtensionContext) {
       let notifyAboutSingleLineSelections = false;
 
       try {
-        editor.selections.forEach(selection => {
+        editor.selections.forEach((selection) => {
           if (selection.isEmpty) {
             return;
           }
@@ -33,17 +33,17 @@ export function activate(context: vscode.ExtensionContext) {
           const text = document.getText(range);
           const capitalized = title(text, { special: config.special });
 
-          editor.edit(edit => {
+          editor.edit((edit) => {
             edit.replace(range, capitalized);
           });
         });
       } catch (e) {
-        const message = 'Something went wrong\n  ' + e.message;
+        const message = "Something went wrong\n  " + (e as Error).message;
         vscode.window.showErrorMessage(message);
       } finally {
         if (notifyAboutSingleLineSelections) {
           vscode.window.setStatusBarMessage(
-            'Ignoring selection(s) spanning multiple lines.',
+            "Ignoring selection(s) spanning multiple lines.",
             2000
           );
         }

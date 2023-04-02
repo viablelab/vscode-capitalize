@@ -4,6 +4,10 @@ All notable changes to the "capitalize" extension will be documented in this fil
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 0.2.1 - 2023-04-02
+
+- Update dependency versions (including `title`)
+
 ## [0.1.0] - 2018-12-05
 
 - Change command name capitalization

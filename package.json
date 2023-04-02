@@ -2,12 +2,12 @@
   "name": "capitalize",
   "displayName": "Capitalize",
   "description": "Capitalize titles according to The Chicago Manual of Style",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "license": "MIT",
   "publisher": "viablelab",
   "repository": "https://github.com/viablelab/vscode-capitalize",
   "engines": {
-    "vscode": "^1.29.0"
+    "vscode": "^1.77.0"
   },
   "categories": [
     "Formatters"
@@ -38,20 +38,24 @@
     }
   },
   "scripts": {
-    "vscode:prepublish": "yarn run compile",
+    "vscode:prepublish": "pnpm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "yarn run compile && node ./node_modules/vscode/bin/test"
+    "test": "pnpm run compile && node ./out/test/runTest.js"
   },
   "devDependencies": {
-    "@types/mocha": "^2.2.42",
-    "@types/node": "^8.10.25",
-    "tslint": "^5.8.0",
-    "typescript": "^2.6.1",
-    "vscode": "^1.1.21"
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.13.0",
+    "@types/vscode": "^1.77.0",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "@vscode/test-electron": "^2.3.0",
+    "eslint": "^8.24.0",
+    "glob": "^9.3.4",
+    "mocha": "^10.2.0",
+    "typescript": "^5.0.3"
   },
   "dependencies": {
-    "title": "^3.4.0"
+    "title": "^3.5.3"
   }
 }
